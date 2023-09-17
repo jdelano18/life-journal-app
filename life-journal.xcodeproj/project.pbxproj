@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79DFB4B32AB77A00004A21CE /* life_journalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFB4B22AB77A00004A21CE /* life_journalApp.swift */; };
+		79DFB4B52AB77A00004A21CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFB4B42AB77A00004A21CE /* ContentView.swift */; };
+		79DFB4B72AB77A01004A21CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DFB4B62AB77A01004A21CE /* Assets.xcassets */; };
+		79DFB4BA2AB77A01004A21CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DFB4B92AB77A01004A21CE /* Preview Assets.xcassets */; };
+		79DFB4C42AB77A01004A21CE /* life_journalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFB4C32AB77A01004A21CE /* life_journalTests.swift */; };
+		79DFB4CE2AB77A01004A21CE /* life_journalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFB4CD2AB77A01004A21CE /* life_journalUITests.swift */; };
+		79DFB4D02AB77A01004A21CE /* life_journalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFB4CF2AB77A01004A21CE /* life_journalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79DFB4C02AB77A01004A21CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79DFB4A72AB77A00004A21CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DFB4AE2AB77A00004A21CE;
+			remoteInfo = "life-journal";
+		};
+		79DFB4CA2AB77A01004A21CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79DFB4A72AB77A00004A21CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79DFB4AE2AB77A00004A21CE;
+			remoteInfo = "life-journal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79DFB4AF2AB77A00004A21CE /* life-journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "life-journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DFB4B22AB77A00004A21CE /* life_journalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_journalApp.swift; sourceTree = "<group>"; };
+		79DFB4B42AB77A00004A21CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79DFB4B62AB77A01004A21CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79DFB4B92AB77A01004A21CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79DFB4BF2AB77A01004A21CE /* life-journalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "life-journalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DFB4C32AB77A01004A21CE /* life_journalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_journalTests.swift; sourceTree = "<group>"; };
+		79DFB4C92AB77A01004A21CE /* life-journalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "life-journalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DFB4CD2AB77A01004A21CE /* life_journalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_journalUITests.swift; sourceTree = "<group>"; };
+		79DFB4CF2AB77A01004A21CE /* life_journalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_journalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79DFB4AC2AB77A00004A21CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DFB4BC2AB77A01004A21CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DFB4C62AB77A01004A21CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79DFB4A62AB77A00004A21CE = {
+			isa = PBXGroup;
+			children = (
+				79DFB4B12AB77A00004A21CE /* life-journal */,
+				79DFB4C22AB77A01004A21CE /* life-journalTests */,
+				79DFB4CC2AB77A01004A21CE /* life-journalUITests */,
+				79DFB4B02AB77A00004A21CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79DFB4B02AB77A00004A21CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79DFB4AF2AB77A00004A21CE /* life-journal.app */,
+				79DFB4BF2AB77A01004A21CE /* life-journalTests.xctest */,
+				79DFB4C92AB77A01004A21CE /* life-journalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79DFB4B12AB77A00004A21CE /* life-journal */ = {
+			isa = PBXGroup;
+			children = (
+				79DFB4B22AB77A00004A21CE /* life_journalApp.swift */,
+				79DFB4B42AB77A00004A21CE /* ContentView.swift */,
+				79DFB4B62AB77A01004A21CE /* Assets.xcassets */,
+				79DFB4B82AB77A01004A21CE /* Preview Content */,
+			);
+			path = "life-journal";
+			sourceTree = "<group>";
+		};
+		79DFB4B82AB77A01004A21CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79DFB4B92AB77A01004A21CE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79DFB4C22AB77A01004A21CE /* life-journalTests */ = {
+			isa = PBXGroup;
+			children = (
+				79DFB4C32AB77A01004A21CE /* life_journalTests.swift */,
+			);
+			path = "life-journalTests";
+			sourceTree = "<group>";
+		};
+		79DFB4CC2AB77A01004A21CE /* life-journalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79DFB4CD2AB77A01004A21CE /* life_journalUITests.swift */,
+				79DFB4CF2AB77A01004A21CE /* life_journalUITestsLaunchTests.swift */,
+			);
+			path = "life-journalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79DFB4AE2AB77A00004A21CE /* life-journal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DFB4D32AB77A01004A21CE /* Build configuration list for PBXNativeTarget "life-journal" */;
+			buildPhases = (
+				79DFB4AB2AB77A00004A21CE /* Sources */,
+				79DFB4AC2AB77A00004A21CE /* Frameworks */,
+				79DFB4AD2AB77A00004A21CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "life-journal";
+			productName = "life-journal";
+			productReference = 79DFB4AF2AB77A00004A21CE /* life-journal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79DFB4BE2AB77A01004A21CE /* life-journalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DFB4D62AB77A01004A21CE /* Build configuration list for PBXNativeTarget "life-journalTests" */;
+			buildPhases = (
+				79DFB4BB2AB77A01004A21CE /* Sources */,
+				79DFB4BC2AB77A01004A21CE /* Frameworks */,
+				79DFB4BD2AB77A01004A21CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79DFB4C12AB77A01004A21CE /* PBXTargetDependency */,
+			);
+			name = "life-journalTests";
+			productName = "life-journalTests";
+			productReference = 79DFB4BF2AB77A01004A21CE /* life-journalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79DFB4C82AB77A01004A21CE /* life-journalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79DFB4D92AB77A01004A21CE /* Build configuration list for PBXNativeTarget "life-journalUITests" */;
+			buildPhases = (
+				79DFB4C52AB77A01004A21CE /* Sources */,
+				79DFB4C62AB77A01004A21CE /* Frameworks */,
+				79DFB4C72AB77A01004A21CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79DFB4CB2AB77A01004A21CE /* PBXTargetDependency */,
+			);
+			name = "life-journalUITests";
+			productName = "life-journalUITests";
+			productReference = 79DFB4C92AB77A01004A21CE /* life-journalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79DFB4A72AB77A00004A21CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					79DFB4AE2AB77A00004A21CE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					79DFB4BE2AB77A01004A21CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 79DFB4AE2AB77A00004A21CE;
+					};
+					79DFB4C82AB77A01004A21CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 79DFB4AE2AB77A00004A21CE;
+					};
+				};
+			};
+			buildConfigurationList = 79DFB4AA2AB77A00004A21CE /* Build configuration list for PBXProject "life-journal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79DFB4A62AB77A00004A21CE;
+			productRefGroup = 79DFB4B02AB77A00004A21CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79DFB4AE2AB77A00004A21CE /* life-journal */,
+				79DFB4BE2AB77A01004A21CE /* life-journalTests */,
+				79DFB4C82AB77A01004A21CE /* life-journalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79DFB4AD2AB77A00004A21CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFB4BA2AB77A01004A21CE /* Preview Assets.xcassets in Resources */,
+				79DFB4B72AB77A01004A21CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DFB4BD2AB77A01004A21CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DFB4C72AB77A01004A21CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79DFB4AB2AB77A00004A21CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFB4B52AB77A00004A21CE /* ContentView.swift in Sources */,
+				79DFB4B32AB77A00004A21CE /* life_journalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DFB4BB2AB77A01004A21CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFB4C42AB77A01004A21CE /* life_journalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79DFB4C52AB77A01004A21CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DFB4D02AB77A01004A21CE /* life_journalUITestsLaunchTests.swift in Sources */,
+				79DFB4CE2AB77A01004A21CE /* life_journalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79DFB4C12AB77A01004A21CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DFB4AE2AB77A00004A21CE /* life-journal */;
+			targetProxy = 79DFB4C02AB77A01004A21CE /* PBXContainerItemProxy */;
+		};
+		79DFB4CB2AB77A01004A21CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79DFB4AE2AB77A00004A21CE /* life-journal */;
+			targetProxy = 79DFB4CA2AB77A01004A21CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79DFB4D12AB77A01004A21CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79DFB4D22AB77A01004A21CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79DFB4D42AB77A01004A21CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"life-journal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.life-journal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79DFB4D52AB77A01004A21CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"life-journal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.life-journal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79DFB4D72AB77A01004A21CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.life-journalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/life-journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/life-journal";
+			};
+			name = Debug;
+		};
+		79DFB4D82AB77A01004A21CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.life-journalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/life-journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/life-journal";
+			};
+			name = Release;
+		};
+		79DFB4DA2AB77A01004A21CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.life-journalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "life-journal";
+			};
+			name = Debug;
+		};
+		79DFB4DB2AB77A01004A21CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.life-journalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "life-journal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79DFB4AA2AB77A00004A21CE /* Build configuration list for PBXProject "life-journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DFB4D12AB77A01004A21CE /* Debug */,
+				79DFB4D22AB77A01004A21CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DFB4D32AB77A01004A21CE /* Build configuration list for PBXNativeTarget "life-journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DFB4D42AB77A01004A21CE /* Debug */,
+				79DFB4D52AB77A01004A21CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DFB4D62AB77A01004A21CE /* Build configuration list for PBXNativeTarget "life-journalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DFB4D72AB77A01004A21CE /* Debug */,
+				79DFB4D82AB77A01004A21CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79DFB4D92AB77A01004A21CE /* Build configuration list for PBXNativeTarget "life-journalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79DFB4DA2AB77A01004A21CE /* Debug */,
+				79DFB4DB2AB77A01004A21CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79DFB4A72AB77A00004A21CE /* Project object */;
+}
