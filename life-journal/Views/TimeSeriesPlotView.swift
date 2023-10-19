@@ -19,19 +19,11 @@ struct TimeSeriesPlotView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            Text("Weekly Outlook")
+                .font(.title)
             ForEach(mergedData) { question in
                 VStack(spacing: 5) {
-                    Text(question.title)
-                    HStack {
-                        ForEach(question.answers) { answer in
-                            VStack {
-                                Rectangle()
-                                    .fill(answer.color)
-                                    .frame(width: 30, height: 30) // Adjust size as needed
-                                Text(answer.dayOfWeekShort)
-                            }
-                        }
-                    }
+                    CardView2(question: question)
                 }
             }
         }
