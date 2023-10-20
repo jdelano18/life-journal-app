@@ -1,15 +1,15 @@
 //
-//  TimeSeriesPlotView.swift
+//  QuestionsView.swift
 //  life-journal
 //
-//  Created by Jimmy DeLano on 10/17/23.
+//  Created by Jimmy DeLano on 10/19/23.
 //
 
 import SwiftUI
 import Charts
 
 
-struct TimeSeriesPlotView: View {
+struct QuestionsView: View {
     @Binding var data: [Question]
     
     // This computed property merges the provided data with the last week's answers.
@@ -32,9 +32,9 @@ struct TimeSeriesPlotView: View {
 }
 
 
-struct TimeSeriesPlotView_Previews: PreviewProvider {
+struct QuestionsView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeSeriesPlotView(data: .constant(Question.sampleData))
+        QuestionsView(data: .constant(Question.sampleData))
     }
 }
 

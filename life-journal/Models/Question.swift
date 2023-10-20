@@ -44,7 +44,7 @@ struct Answer: Identifiable, Codable {
 
 struct Question: Identifiable, Codable {
     let id: UUID
-    let title: String
+    var title: String
     var answers: [Answer]
     
     init(id: UUID = UUID(), title: String, answers: [Answer] = []) {
