@@ -46,29 +46,35 @@ struct Question: Identifiable, Codable {
     let id: UUID
     var title: String
     var answers: [Answer]
+    var yesIsPositive: Bool
+    var notificationTime: Date?
     
-    init(id: UUID = UUID(), title: String, answers: [Answer] = []) {
+    init(id: UUID = UUID(), title: String, answers: [Answer] = [], yesIsPositive: Bool, notificationTime: Date? = nil) {
         self.id = id
         self.title = title
         self.answers = answers
+        self.yesIsPositive = yesIsPositive
+        self.notificationTime = notificationTime
     }
 }
 
 
 extension Question {
     static let sampleData: [Question] = [
-        Question(title: "If today was your last day, would you want to do what you are going to do today?",
+        Question(title: "If today was your last day alive, would you want to do what you are going to do today?",
                  answers: [
                     Answer(date: Date(), response: 1),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -1, to: Date())!, response: 1),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -2, to: Date())!, response: 0)
-                 ]),
+                 ],
+                yesIsPositive: true),
         Question(title: "Did you snooze your alarm?",
                  answers: [
                     Answer(date: Date(), response: 0),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -1, to: Date())!, response: 0),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -2, to: Date())!, response: 0)
-                 ])
+                 ],
+                yesIsPositive: false)
     ]
 }
 
@@ -102,7 +108,7 @@ extension Array where Element == Question {
                     newAnswers.append(Answer(date: date, response: -1)) // Gray value
                 }
             }
-            let newQuestion = Question(id: question.id, title: question.title, answers: newAnswers)
+            let newQuestion = Question(id: question.id, title: question.title, answers: newAnswers, yesIsPositive: question.yesIsPositive)
             mergedQuestions.append(newQuestion)
         }
         return mergedQuestions

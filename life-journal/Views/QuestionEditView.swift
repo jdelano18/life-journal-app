@@ -10,7 +10,7 @@ import SwiftUI
 
 struct QuestionEditView: View {
     @Binding var question: Question
-//    @State private var newAttendeeName = ""
+    @State private var selectedTime: Date = Date()
     
     var body: some View {
         Form {
@@ -19,9 +19,21 @@ struct QuestionEditView: View {
                     .padding()
             }
             Section(header: Text("About this question")){
-                Text("y/n **todo")
+                Toggle("'Yes' is a positive answer", isOn: $question.yesIsPositive)
             }
-            // add in notif time
+            Section(header: Text("When to answer")) {
+                DatePicker("Select a time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                    .onAppear {
+                        // If the notificationTime is nil, keep the default (current time)
+                        if let notificationTime = question.notificationTime {
+                            self.selectedTime = notificationTime
+                        }
+                    }
+                // When the user picks a new time, update the question's notificationTime
+                    .onChange(of: selectedTime) {
+                        question.notificationTime = selectedTime
+                    }
+            }
         }
     }
 }
