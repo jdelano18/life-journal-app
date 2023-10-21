@@ -22,17 +22,15 @@ struct QuestionEditView: View {
                 Toggle("'Yes' is a positive answer", isOn: $question.yesIsPositive)
             }
             Section(header: Text("When to answer")) {
-                DatePicker("Select a time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                DatePicker("Reminder time", selection: $selectedTime, displayedComponents: .hourAndMinute)
                     .onAppear {
                         // If the notificationTime is nil, keep the default (current time)
-                        if let notificationTime = question.notificationTime {
-                            self.selectedTime = notificationTime
-                        }
+                        self.selectedTime = question.notificationTime
                     }
-                // When the user picks a new time, update the question's notificationTime
-                    .onChange(of: selectedTime) {
-                        question.notificationTime = selectedTime
-                    }
+            }
+            // When the user picks a new time, update the question's notificationTime
+            .onChange(of: selectedTime) {
+                question.notificationTime = selectedTime
             }
         }
     }

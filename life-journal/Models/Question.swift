@@ -47,9 +47,26 @@ struct Question: Identifiable, Codable {
     var title: String
     var answers: [Answer]
     var yesIsPositive: Bool
-    var notificationTime: Date?
+    var notificationTime: Date
     
-    init(id: UUID = UUID(), title: String, answers: [Answer] = [], yesIsPositive: Bool, notificationTime: Date? = nil) {
+    var streak: Int {
+        var streakCount = 0
+        
+        let positiveResponse: Int = yesIsPositive ? 1 : 0
+        
+        for answer in answers.reversed() {
+            if answer.response == positiveResponse {
+                streakCount += 1
+            } else {
+                // If the response is not positive or is a missing day (-1),
+                // it breaks the streak, so we exit the loop.
+                break
+            }
+        }
+        return streakCount
+    }
+    
+    init(id: UUID = UUID(), title: String, answers: [Answer] = [], yesIsPositive: Bool, notificationTime: Date) {
         self.id = id
         self.title = title
         self.answers = answers
@@ -67,14 +84,18 @@ extension Question {
                     Answer(date: Calendar.current.date(byAdding: .day, value: -1, to: Date())!, response: 1),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -2, to: Date())!, response: 0)
                  ],
-                yesIsPositive: true),
+                 yesIsPositive: true,
+                 notificationTime: Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: Date())!
+                ),
         Question(title: "Did you snooze your alarm?",
                  answers: [
                     Answer(date: Date(), response: 0),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -1, to: Date())!, response: 0),
                     Answer(date: Calendar.current.date(byAdding: .day, value: -2, to: Date())!, response: 0)
                  ],
-                yesIsPositive: false)
+                 yesIsPositive: false,
+                 notificationTime: Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: Date())!
+                )
     ]
 }
 
@@ -108,7 +129,7 @@ extension Array where Element == Question {
                     newAnswers.append(Answer(date: date, response: -1)) // Gray value
                 }
             }
-            let newQuestion = Question(id: question.id, title: question.title, answers: newAnswers, yesIsPositive: question.yesIsPositive)
+            let newQuestion = Question(id: question.id, title: question.title, answers: newAnswers, yesIsPositive: question.yesIsPositive, notificationTime: question.notificationTime)
             mergedQuestions.append(newQuestion)
         }
         return mergedQuestions

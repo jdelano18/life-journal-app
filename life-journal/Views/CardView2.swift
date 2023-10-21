@@ -31,8 +31,10 @@ struct CardView2: View {
                     }
                 Spacer()
                 }
-                Text("🔥")
-                    .labelStyle(.trailingIcon)
+                if (question.streak > 0) {
+                    Text("\(question.streak) 🔥")
+                        .labelStyle(.trailingIcon)
+                }
             }
             .font(.caption)
         }
