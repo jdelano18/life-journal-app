@@ -18,16 +18,18 @@ struct QuestionsView: View {
     }
     
     var body: some View {
-        VStack(spacing: 10) {
-            Text("Weekly Outlook")
-                .font(.title)
-            ForEach(mergedData) { question in
-                VStack(spacing: 5) {
-                    CardView2(question: question)
+        NavigationStack{
+                ForEach(mergedData) { question in
+                    VStack {
+                        NavigationLink(destination: AnswerChartView(answers: question.answers, monthYearLabels: getLastSixMonthYearLabels())){
+                            CardView2(question: question)
+                        }
+                        .accentColor(.primary)
+                    }
                 }
-            }
+                .navigationTitle("Weekly Outlook")
+            .padding()
         }
-        .padding()
     }
 }
 

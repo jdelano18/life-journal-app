@@ -47,8 +47,12 @@ struct AnswerChartView: View {
     }
     
     func getAnswer(for index: Int) -> Answer {
-        if index < answers.count {
-            return answers[answers.count - 1 - index]
+        let weeklyIndex = index / 7 * 7
+        let dayIndex = index % 7
+        let adjustedIndex = weeklyIndex + (6 - dayIndex) // This adjustment makes the data appear from right to left
+
+        if adjustedIndex < answers.count {
+            return answers[answers.count - 1 - adjustedIndex]
         }
         // Return a default answer for missing data
         return Answer(date: Date(), response: -1)
